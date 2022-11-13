@@ -1,0 +1,31 @@
+x = float(input())
+y = float(input())
+if x > 0 and y > 0:
+    print('Точка принадлежит первой четверти')
+    a1 = input("Введите две строки: >>>")
+    a2 = input()
+    n=max(len(str(a1)),len(str(a2)))
+    if n > len(str(a1)):
+     print(a1,'– самая короткая строка')
+    else:
+     print(a2, '– самая короткая строка')
+elif x<0 and y>0:
+    print('Точка принадлежит второй четверти')
+    f=(2*(-x)-y)/y**2
+    print(f)
+elif x<0 and y<0:
+    print('Точка принадлежит третьей четверти')
+    a3 = input("Введите строку: >>>")
+    x=x*float(len(str(a3)))
+    y=y*float(len(str(a3)))
+    print('x =',x)
+    print('y =',y)
+else:
+    print('Точка принадлежит четвертой четверти')
+    if x>-y:
+        print('Координата x – наибольшая по модулю')
+    elif x==-y:
+        print('Координата равны по модулю')
+    else:
+        print('Координата y – наибольшая по модулю')
+
