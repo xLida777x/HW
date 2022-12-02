@@ -1,0 +1,20 @@
+word = str(input())
+count=0
+p=0
+let = ''
+if word.isdigit() == 1:
+    for i in range(0,len(word)):
+        x = 10*int(word[i])
+        print(x)
+elif word.isalpha() == 1:
+    for letter in word:
+        if letter == 'q':
+            count += 1
+    print(count)
+else:
+    for let in word:
+        if let.isalnum() == 1:
+         p += 1
+        if let.isalnum() == 0:
+         print(p)
+         p += 1
