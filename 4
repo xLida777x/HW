@@ -1,0 +1,15 @@
+word=str(input())
+while word:
+    if word == 'STOP':
+        break
+    elif word.isalpha():
+        print('Буквенная строка')
+        word = str(input())
+    elif word.isdigit():
+        print('Цифровая строка')
+        word = str(input())
+    elif word.isalnum():
+        print('Смешанная строка')
+        word = str(input())
+    else:
+        word = str(input())
