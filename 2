@@ -1,15 +1,20 @@
 word = str(input())
-print(len(word))
-print(word[0])
-print(word[-1])
-x=str()
-z=str()
-def t(s):
-    return s[::-1]
-print(t(word))
-for i in range(0,len(word),2):
-    x += word[i]
-print(x)
-for y in range(1,len(word),2):
-    z += word[y]
-print(z)
+count=0
+p=0
+let = ''
+if word.isdigit() == 1:
+    for i in range(0,len(word)):
+        x = 10*int(word[i])
+        print(x)
+elif word.isalpha() == 1:
+    for letter in word:
+        if letter == 'q':
+            count += 1
+    print(count)
+else:
+    for let in word:
+        if let.isalnum() == 1:
+         p += 1
+        if let.isalnum() == 0:
+         print(p)
+         p += 1
